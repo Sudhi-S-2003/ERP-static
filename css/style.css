@@ -5,18 +5,20 @@
     visibility: hidden;
     transition: opacity .8s ease-out, visibility 0s linear .5s;
     z-index: 99999;
- }
+}
 
- #spinner.show {
-     transition: opacity .8s ease-out, visibility 0s linear .0s;
-     visibility: visible;
-     opacity: 1;
- }
+#spinner.show {
+    transition: opacity .8s ease-out, visibility 0s linear .0s;
+    visibility: visible;
+    opacity: 1;
+}
+
 
 /*** Spinner End ***/
 
 
 /*** Button Start ***/
+
 .btn {
     font-weight: 600;
     transition: .5s;
@@ -62,6 +64,7 @@
     z-index: 99;
 }
 
+
 /*** Button End ***/
 
 
@@ -94,14 +97,20 @@
 }
 
 @keyframes mymove {
-    from {left: -100%;}
-    to {left: 100%;}
+    from {
+        left: -100%;
+    }
+    to {
+        left: 100%;
+    }
 }
+
 
 /*** Topbar End ***/
 
 
 /*** Navbar Start ***/
+
 .navbar .navbar-nav {
     padding: 15px 0;
 }
@@ -111,7 +120,6 @@
     color: var(--bs-white);
     font-size: 18px;
     outline: none;
-    
 }
 
 .navbar .navbar-nav .nav-link:hover,
@@ -126,6 +134,154 @@
     font-weight: 900;
     vertical-align: middle;
     margin-left: 8px;
+}
+
+.account-page {
+    padding: 50px 0;
+    background: radial-gradient(#fff, #ffd6d6);
+}
+
+.form-container {
+    background: #fff;
+    width: 300px;
+    height: 500px;
+    position: relative;
+    text-align: center;
+    padding: 20px 0;
+    margin: auto;
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.success {
+    color: green;
+}
+
+.error {
+    color: red;
+}
+
+.container {
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.col-2 {
+    flex-basis: 50%;
+    min-width: 300px;
+    height: 550px;
+}
+
+.col-2 img {
+    max-width: 100%;
+}
+
+.col-2 h1 {
+    font-size: 50px;
+    line-height: 60px;
+    margin: 25px 0;
+}
+
+.nbtn {
+    display: inline-block;
+    background: #ff523b;
+    color: white;
+    padding: 8px 30px;
+    margin: 15px 0;
+    border-radius: 30px;
+    transition: background 0.5s;
+}
+
+.nbtn:hover {
+    background: #563434;
+}
+
+.form-container span {
+    font-weight: bold;
+    padding: 0 10px;
+    color: #555;
+    cursor: pointer;
+    width: 100px;
+    display: inline-block;
+}
+
+.form-btn {
+    display: inline-block;
+}
+
+.form-container form {
+    max-width: 300px;
+    padding: 0 20px;
+    position: absolute;
+    top: 130px;
+    transition: transform 1s;
+}
+
+form input {
+    width: 100%;
+    height: 30px;
+    margin: 10px 0;
+    padding: 0 10px;
+    border: 1px solid #ccc;
+}
+
+form select {
+    width: 100%;
+    height: 30px;
+    margin: 10px 0;
+    padding: 0 10px;
+    border: 1px solid #ccc;
+}
+
+form textarea {
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 100px;
+    margin: 10px 0;
+    padding: 0 10px;
+    border: 1px solid #ccc;
+}
+
+form .btn {
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    margin: 10px 0;
+}
+
+form .btn:focus {
+    outline: none;
+}
+
+#LoginForm {
+    left: -300px;
+}
+
+#RegForm {
+    left: 0;
+}
+
+form a {
+    font-size: 12px;
+}
+
+#Indicator {
+    width: 100px;
+    border: none;
+    background: #fc432a;
+    height: 3px;
+    margin-top: 8px;
+    transform: translateX(100px);
+    transition: transform 1s;
 }
 
 @media (min-width: 992px) {
@@ -146,6 +302,7 @@
     transition: .5s;
     opacity: 1;
 }
+
 
 /*** Navbar End ***/
 
@@ -263,16 +420,13 @@
     .carousel-item {
         min-height: 500px;
     }
-    
     .carousel-item img {
         min-height: 500px;
         object-fit: cover;
     }
-
     .carousel-item h1 {
         font-size: 40px !important;
     }
-
     .carousel-item p {
         font-size: 16px !important;
     }
@@ -282,16 +436,13 @@
     .carousel-item {
         min-height: 400px;
     }
-    
     .carousel-item img {
         min-height: 400px;
         object-fit: cover;
     }
-
     .carousel-item h1 {
         font-size: 28px !important;
     }
-
     .carousel-item p {
         font-size: 14px !important;
     }
@@ -312,6 +463,7 @@
     color: var(--bs-white);
 }
 
+
 /*** Carousel End ***/
 
 
@@ -325,7 +477,6 @@
     padding: 10px 0;
     position: relative;
 }
-
 
 .services-content::after {
     position: absolute;
@@ -368,6 +519,7 @@
 .services-item:hover .services-content-icon p {
     color: var(--bs-white);
 }
+
 
 /*** Services End ***/
 
@@ -436,10 +588,12 @@
     opacity: 0;
 }
 
+
 /*** Project End ***/
 
 
 /*** Blog Start ***/
+
 .blog-item .blog-btn {
     z-index: 2;
 }
@@ -455,7 +609,6 @@
     position: absolute;
     top: 6px;
     left: -140px;
-    
 }
 
 .blog-btn-icon:hover .blog-icon-2 {
@@ -464,15 +617,18 @@
     top: 6px;
     padding-bottom: 5px;
 }
+
 .blog-icon-1 {
     position: relative;
     top: -4px;
 }
+
 .blog-btn-icon:hover .blog-icon-1 {
     top: 0;
     right: -140px;
     transition: 1s;
 }
+
 
 /*** Blog End ***/
 
@@ -559,7 +715,6 @@
     .team-carousel {
         margin-top: 3rem;
     }
-
     .team-carousel .owl-nav {
         top: -85px;
         left: 50%;
@@ -569,6 +724,7 @@
     }
 }
 
+
 /*** Team End ***/
 
 
@@ -576,7 +732,6 @@
 
 .testimonial-item {
     background: #e3f0eb;
-
 }
 
 .testimonial-carousel .owl-dots {
@@ -616,10 +771,12 @@
     box-shadow: 0 0 30px #DDDDDD;
 }
 
+
 /*** Testimonial End ***/
 
 
 /*** Contact Start ***/
+
 .contact-detail::before {
     position: absolute;
     content: "";
@@ -640,6 +797,7 @@
 .contact-form {
     background: #26d48c;
 }
+
 
 /*** Contact End ***/
 
@@ -662,5 +820,6 @@
     background: var(--bs-secondary);
     border: 0;
 }
+
 
 /*** Footer End ***/

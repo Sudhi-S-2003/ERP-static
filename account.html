@@ -53,7 +53,6 @@
     </div>
 </div>
 <!-- Topbar End -->
-
         <!-- Navbar Start -->
         <div class="container-fluid bg-primary">
             <div class="container">
@@ -68,19 +67,19 @@
                         <div class="navbar-nav ms-auto mx-xl-auto p-0">
                             <a href="index.html" class="nav-item nav-link">Home</a>
                             <a href="about.html" class="nav-item nav-link">About</a>
-                            <a href="service.html" class="nav-item nav-link">Services</a>
+                            <a href="service.html" class="nav-item nav-link ">Services</a>
                             <a href="project.html" class="nav-item nav-link">Projects</a>
                             <div class="nav-item dropdown">
-                                <a href="#" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown">Pages</a>
+                                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
                                 <div class="dropdown-menu rounded">
                                     <a href="blog.html" class="dropdown-item">Our Blog</a>
-                                    <a href="team.html" class="dropdown-item active">Our Team</a>
+                                    <a href="team.html" class="dropdown-item">Our Team</a>
                                     <a href="testimonial.html" class="dropdown-item">Testimonial</a>
                                     <a href="404.html" class="dropdown-item">404 Page</a>
                                 </div>
                             </div>
                             <a href="contact.html" class="nav-item nav-link">Contact</a>
-                            <a href="account.html" class="nav-item nav-link ">Account</a>
+                            <a href="account.html" class="nav-item nav-link active">Account</a>
 
                         </div>
                     </div>
@@ -110,12 +109,12 @@
         <!-- Page Header Start -->
         <div class="container-fluid page-header py-5">
             <div class="container text-center py-5">
-                <h1 class="display-2 text-white mb-4 animated slideInDown">Our Team</h1>
+                <h1 class="display-2 text-white mb-4 animated slideInDown">Sign in/Sign up</h1>
                 <nav aria-label="breadcrumb animated slideInDown">
                     <ol class="breadcrumb justify-content-center mb-0">
                         <li class="breadcrumb-item"><a href="#">Home</a></li>
                         <li class="breadcrumb-item"><a href="#">Pages</a></li>
-                        <li class="breadcrumb-item" aria-current="page">Our Team</li>
+                        <li class="breadcrumb-item" aria-current="page">Sign in/Sign up</li>
                     </ol>
                 </nav>
             </div>
@@ -157,95 +156,93 @@
         <!-- Fact End -->
 
 
-        <!-- Team Start -->
-        <div class="container-fluid py-5 mb-5 team">
-            <div class="container">
-                <div class="text-center mx-auto pb-5 wow fadeIn" data-wow-delay=".3s" style="max-width: 600px;">
-                    <h5 class="text-primary">Our Team</h5>
-                    <h1>Meet our expert Team</h1>
-                </div>
-                <div class="owl-carousel team-carousel wow fadeIn" data-wow-delay=".5s">
-                    <div class="rounded team-item">
-                        <div class="team-content">
-                            <div class="team-img-icon">
-                                <div class="team-img rounded-circle">
-                                    <img src="img/team-1.jpg" class="img-fluid w-100 rounded-circle" alt="">
-                                </div>
-                                <div class="team-name text-center py-3">
-                                    <h4 class="">Full Name</h4>
-                                    <p class="m-0">Designation</p>
-                                </div>
-                                <div class="team-icon d-flex justify-content-center pb-4">
-                                    <a class="btn btn-square btn-secondary text-white rounded-circle m-1" href=""><i class="fab fa-facebook-f"></i></a>
-                                    <a class="btn btn-square btn-secondary text-white rounded-circle m-1" href=""><i class="fab fa-twitter"></i></a>
-                                    <a class="btn btn-square btn-secondary text-white rounded-circle m-1" href=""><i class="fab fa-instagram"></i></a>
-                                    <a class="btn btn-square btn-secondary text-white rounded-circle m-1" href=""><i class="fab fa-linkedin-in"></i></a>
-                                </div>
-                            </div>
-                        </div>
+
+<div class="account-page">
+    <div class="container">
+        <div class="row">
+            <div class="col-2">
+                <img src="img/person-1.png" width="100%">
+            </div>
+            <div class="col-2">
+                <div class="form-container" style='overflow-y:auto;'>
+                   
+                    <br>
+                    <div class="form-btn">
+                        <span onclick="login()">Login</span>
+                        <span onclick="register()">Register</span>
+                        <hr id="Indicator">
                     </div>
-                    <div class="rounded team-item">
-                        <div class="team-content">
-                            <div class="team-img-icon">
-                                <div class="team-img rounded-circle">
-                                    <img src="img/team-2.jpg" class="img-fluid w-100 rounded-circle" alt="">
-                                </div>
-                                <div class="team-name text-center py-3">
-                                    <h4 class="">Full Name</h4>
-                                    <p class="m-0">Designation</p>
-                                </div>
-                                <div class="team-icon d-flex justify-content-center pb-4">
-                                    <a class="btn btn-square btn-secondary text-white rounded-circle m-1" href=""><i class="fab fa-facebook-f"></i></a>
-                                    <a class="btn btn-square btn-secondary text-white rounded-circle m-1" href=""><i class="fab fa-twitter"></i></a>
-                                    <a class="btn btn-square btn-secondary text-white rounded-circle m-1" href=""><i class="fab fa-instagram"></i></a>
-                                    <a class="btn btn-square btn-secondary text-white rounded-circle m-1" href=""><i class="fab fa-linkedin-in"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="rounded team-item">
-                        <div class="team-content">
-                            <div class="team-img-icon">
-                                <div class="team-img rounded-circle">
-                                    <img src="img/team-3.jpg" class="img-fluid w-100 rounded-circle" alt="">
-                                </div>
-                                <div class="team-name text-center py-3">
-                                    <h4 class="">Full Name</h4>
-                                    <p class="m-0">Designation</p>
-                                </div>
-                                <div class="team-icon d-flex justify-content-center pb-4">
-                                    <a class="btn btn-square btn-secondary text-white rounded-circle m-1" href=""><i class="fab fa-facebook-f"></i></a>
-                                    <a class="btn btn-square btn-secondary text-white rounded-circle m-1" href=""><i class="fab fa-twitter"></i></a>
-                                    <a class="btn btn-square btn-secondary text-white rounded-circle m-1" href=""><i class="fab fa-instagram"></i></a>
-                                    <a class="btn btn-square btn-secondary text-white rounded-circle m-1" href=""><i class="fab fa-linkedin-in"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="rounded team-item">
-                        <div class="team-content">
-                            <div class="team-img-icon">
-                                <div class="team-img rounded-circle">
-                                    <img src="img/team-4.jpg" class="img-fluid w-100 rounded-circle" alt="">
-                                </div>
-                                <div class="team-name text-center py-3">
-                                    <h4 class="">Full Name</h4>
-                                    <p class="m-0">Designation</p>
-                                </div>
-                                <div class="team-icon d-flex justify-content-center pb-4">
-                                    <a class="btn btn-square btn-secondary text-white rounded-circle m-1" href=""><i class="fab fa-facebook-f"></i></a>
-                                    <a class="btn btn-square btn-secondary text-white rounded-circle m-1" href=""><i class="fab fa-twitter"></i></a>
-                                    <a class="btn btn-square btn-secondary text-white rounded-circle m-1" href=""><i class="fab fa-instagram"></i></a>
-                                    <a class="btn btn-square btn-secondary text-white rounded-circle m-1" href=""><i class="fab fa-linkedin-in"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <form id="LoginForm" action="" method="post">
+                  
+                        <input type="text" name="username" placeholder="Username">
+                        <input type="password" name="password" placeholder="Password">
+                        <select name="department_choice" id="">
+                            <option value="" selected disabled>--select department--</option>
+                            <option value="CUS-">-customer-</option>
+                            <option value="HRM-">-HRM-</option>
+
+                        </select>
+                        <button type="submit" class="nbtn" name="login">Login</button>
+                        <a href="">Forget Password</a>
+                    </form>
+
+                    <form id="RegForm" action="" method="post" onsubmit="return val1()">
+                        
+                        <input id="name" type="text" placeholder="name" onkeyup="subval4()" name="name">
+                        <span id="name-error" style="color: red; font-size:10px; width:100%;"></span>
+
+                        <input id="username" type="text" placeholder="Username" onkeyup="subval1()" name="username">
+                        <span id="username-error" style="color: red; font-size:10px; width:100%;"></span>
+
+                        <input id="email" type="email" placeholder="Email" onkeyup="subval2()" name="email">
+                        <span id="email-error" style="color: red; font-size:10px; width:100%;"></span>
+
+                        <input id="phone" type="number" placeholder="Phone" onkeyup="subval5()" name="phone">
+                        <span id="phone-error" style="color: red;font-size:10px; width:100%;"></span>
+
+                        <input id="password" type="password" placeholder="Password" onkeyup="subval3()" name="password">
+                        <span id="password-error" style="color: red;font-size:10px; width:100%;"></span>
+                        <button type="submit" class="nbtn" name="register">Register</button>
+                    </form>
                 </div>
             </div>
         </div>
-        <!-- Team End -->
+    </div>
+</div>
 
+<script>
+    var MenuItems = document.getElementById("MenuItems");
+    MenuItems.style.maxHeight = "0px";
+
+    function menutoggle() {
+        if (MenuItems.style.maxHeight == "0px") {
+            MenuItems.style.maxHeight = "200px"
+        } else {
+            MenuItems.style.maxHeight = "0px"
+        }
+    }
+</script>
+<script src="js/validation1.js"></script>
+<!-- Toggle Form -->
+<script>
+    var LoginForm = document.getElementById("LoginForm");
+    var RegForm = document.getElementById("RegForm");
+    var Indicator = document.getElementById("Indicator");
+
+    function register() {
+        RegForm.style.transform = "translatex(0px)";
+        LoginForm.style.transform = "translatex(0px)";
+        Indicator.style.transform = "translateX(100px)";
+
+    }
+
+    function login() {
+        RegForm.style.transform = "translatex(300px)";
+        LoginForm.style.transform = "translatex(300px)";
+        Indicator.style.transform = "translate(0px)";
+
+    }
+</script>
 
 
         <!-- Footer Start -->
@@ -300,7 +297,7 @@
                     </div>
                     <div class="col-md-6 text-center text-md-end">
                         <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-                        <span class="text-light">Designed By<a href="https://github.com/Sudhi-S-2003/" class="text-secondary"> Sudhi S.</a></span>
+                        <span class="text-light">Designed By<a href="https://github.com/Sudhi-S-2003" class="text-secondary"> Sudhi S.</a></span>
                     </div>
                 </div>
             </div>
